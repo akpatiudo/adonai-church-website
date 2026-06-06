@@ -6,20 +6,25 @@ import PastorProfile from '../components/home/PastorProfile';
 import CoreValues from '../components/home/CoreValues';
 import PrayerContact from '../components/home/PrayerContact';
 import Footer from '../components/layout/Footer';
+import ServiceTimes from '../components/home/ServiceTimes';
+import WhatsAppButton from '../components/WhatsAppButton';
+import PlanVisit from '../components/home/PlanVisit';
+import GoogleMap from '../components/home/GoogleMap';
 function HomePage() {
   return (
     <>
-      <h1 className="text-red-600 text-6xl">
-        Tailwind Working
-      </h1>
-
+      
       <Navbar />
       <Hero />
+      <ServiceTimes />
+      <PlanVisit />
       <WelcomeAbout />
       <Programmes />
       <PastorProfile />
       <CoreValues />
+      <GoogleMap />
       <PrayerContact />
+      <WhatsAppButton />
       <Footer />
     </>
   );

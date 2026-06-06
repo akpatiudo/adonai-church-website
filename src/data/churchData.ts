@@ -6,9 +6,9 @@ const churchData = {
   address:
     "Km3 Along Effurun - Sapele Expressway, Ohorhe 1 Community, Delta State, Nigeria",
 
-  phone: "08032937176",
+  phone: "+234 803 293 7176",
 
-  whatsapp: "08032937176",
+  whatsapp: "234 803 293 7176",
 
   email: "adonaibaptistchurchohorhe1@gmail.com",
 

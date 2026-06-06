@@ -1,6 +1,24 @@
+import { useState } from 'react';
 import churchData from '../../data/churchData';
 
 function PrayerContact() {
+  const [name, setName] = useState('');
+  const [prayer, setPrayer] = useState('');
+
+  const handlePrayerSubmit = () => {
+    const message = `Hello Adonai Baptist Church,
+
+My Name: ${name}
+
+Prayer Request:
+${prayer}`;
+
+    window.open(
+      `https://wa.me/2348032937176?text=${encodeURIComponent(message)}`,
+      '_blank'
+    );
+  };
+
   return (
    <section
   id="contact"
@@ -128,6 +146,81 @@ function PrayerContact() {
         </div>
       </div>
 
+      {/* Prayer Request Form */}
+<div
+  style={{
+    marginTop: '60px',
+    background: 'rgba(255,255,255,0.1)',
+    padding: '40px',
+    borderRadius: '14px'
+  }}
+>
+  <h3
+    style={{
+      marginBottom: '20px',
+      fontSize: '28px'
+    }}
+  >
+    Submit a Prayer Request
+  </h3>
+
+  <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+  Name
+</p>
+
+<input
+  type="text"
+  placeholder="Your Name"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  style={{
+    width: '100%',
+    padding: '15px',
+    marginBottom: '15px',
+    borderRadius: '8px',
+    border: '1px solid #ddd',
+    background: 'white',
+    color: 'black',
+    fontSize: '16px'
+  }}
+/>
+
+  <p style={{ marginBottom: '10px', fontWeight: 'bold' }}>
+  Prayer Request
+</p>
+
+<textarea
+  placeholder="How can we pray for you?"
+  value={prayer}
+  onChange={(e) => setPrayer(e.target.value)}
+  rows={4}
+  style={{
+    width: '100%',
+    padding: '15px',
+    marginBottom: '20px',
+    borderRadius: '8px',
+    border: '1px solid #ddd',
+    background: 'white',
+    color: 'black',
+    fontSize: '16px'
+  }}
+/>
+
+  <button
+  onClick={handlePrayerSubmit}
+  style={{
+    background: 'white',
+    color: '#6B1D1D',
+    padding: '15px 30px',
+    border: 'none',
+    borderRadius: '8px',
+    fontWeight: 'bold',
+    cursor: 'pointer'
+  }}
+>
+  Submit Prayer Request
+</button>
+</div>      
       {/* Buttons */}
       <div
         style={{

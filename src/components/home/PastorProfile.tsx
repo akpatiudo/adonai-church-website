@@ -5,7 +5,7 @@ function PastorProfile() {
   return (
     <section
   id="pastor"
-  className="py-24 px-6 bg-gray-100"
+  className="py-24 px-6 bg-gray-50"
 >
 
       {/* Container */}
@@ -14,7 +14,7 @@ function PastorProfile() {
         {/* Heading */}
         <div className="text-center mb-20">
 
-          <h2 className="text-4xl md:text-5xl font-bold text-red-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-red-900" mb-16 text-center>
             Meet Our Pastor
           </h2>
 
@@ -46,7 +46,11 @@ function PastorProfile() {
               Word of God, raising disciples, transforming lives, and empowering
               believers to impact their generation through Christ.
             </p>
-
+          <div className="bg-red-50 border-l-4 border-red-900 p-6 rounded-lg my-8">
+            <p className="italic text-gray-700 text-lg">
+            "Our mission is to raise kingdom ambassadors who will impact their generation through Christ."
+  </p>
+</div>
             <a
               href={churchData.socialMedia.youtube}
               target="_blank"

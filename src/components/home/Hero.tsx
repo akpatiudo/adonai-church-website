@@ -1,46 +1,50 @@
-import heroBg from '../../assets/hero-bg.jpg';
-import churchData from '../../data/churchData';
 
 function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
-      style={{
-        backgroundImage: `url(${heroBg})`
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+<section
+  id="hero"
+  className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/src/assets/hero-bg.jpg')"
+  }}
+>
 
-      {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-5xl mt-20">
+  <div className="absolute inset-0 bg-black/60"></div>
 
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-          {churchData.name}
-        </h1>
+  <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
 
-        <p className="text-xl md:text-3xl mb-10 text-gray-200">
-          {churchData.motto}
+        <p className="uppercase tracking-[6px] text-red-300 font-semibold mb-4">
+          Welcome To
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Adonai Baptist Church
+        </h1>
 
-          <button className="bg-red-900 hover:bg-red-950 transition px-8 py-4 rounded-lg text-lg font-semibold shadow-lg">
-            Join Us This Sunday
-          </button>
+        <p className="text-xl md:text-3xl text-gray-200 mb-10">
+          Raising Kingdom Ambassadors for Christ
+        </p>
 
-          <a
-            href={churchData.socialMedia.livestream}
-            target="_blank"
-            rel="noreferrer"
-            className="bg-white text-black hover:bg-gray-200 transition px-8 py-4 rounded-lg text-lg font-semibold shadow-lg"
-          >
-            Watch Live
-          </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
-        </div>
+  <a
+  href="#contact"
+  className="bg-red-900 hover:bg-red-800 transition duration-300 px-10 py-4 rounded-full text-lg font-semibold shadow-xl inline-block"
+>
+  Join Us This Sunday
+</a>
+
+  <a
+    href="https://www.facebook.com/adonaibaptistchurchohorhe1"
+    target="_blank"
+    rel="noreferrer"
+    className="bg-white text-black hover:bg-gray-200 transition duration-300 px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
+  >
+    Watch Live
+  </a>
+
+</div>
+
       </div>
     </section>
   );
