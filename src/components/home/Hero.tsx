@@ -5,8 +5,8 @@ function Hero() {
   id="hero"
   className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
   style={{
-    backgroundImage: "url('/src/assets/hero-bg.jpg')"
-  }}
+  backgroundImage: "url('/hero-bg.jpg')"
+}}
 >
 
   <div className="absolute inset-0 bg-black/60"></div>
