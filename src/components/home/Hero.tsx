@@ -17,11 +17,11 @@ function Hero() {
           Welcome To
         </p>
 
-        <h1 className="text-3xl md:text-7xl font-extrabold leading-tight mb-6">
+        <h1 className="text-sm md:text-2xl font-bold text-gray-900">
           Adonai Baptist Church
         </h1>
 
-        <p className="text-lg md:text-3xl text-gray-200 mb-10">
+        <p className="text-lg md:text-3xl text-gray-200 mb-8">
           Raising Kingdom Ambassadors for Christ
         </p>
 
@@ -29,7 +29,7 @@ function Hero() {
 
   <a
   href="#contact"
-  className="bg-red-900 hover:bg-red-800 transition duration-300 px-10 py-4 rounded-full text-lg font-semibold shadow-xl inline-block"
+  className="bg-red-900 hover:bg-red-800 transition duration-300 px-8 py-3 md:px-10 md:py-4px-10 py-4 rounded-full text-lg font-semibold shadow-xl inline-block"
 >
   Join Us This Sunday
 </a>
@@ -38,7 +38,7 @@ function Hero() {
     href="https://www.facebook.com/adonaibaptistchurchohorhe1"
     target="_blank"
     rel="noreferrer"
-    className="bg-white text-black hover:bg-gray-200 transition duration-300 px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
+    className="bg-white text-black hover:bg-gray-200 transition duration-300 px-8 py-3 md:px-10 md:py-4 rounded-full text-lg font-semibold shadow-xl"
   >
     Watch Live
   </a>
