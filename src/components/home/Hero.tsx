@@ -17,11 +17,11 @@ function Hero() {
           Welcome To
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+        <h1 className="text-3xl md:text-7xl font-extrabold leading-tight mb-6">
           Adonai Baptist Church
         </h1>
 
-        <p className="text-xl md:text-3xl text-gray-200 mb-10">
+        <p className="text-lg md:text-3xl text-gray-200 mb-10">
           Raising Kingdom Ambassadors for Christ
         </p>
 

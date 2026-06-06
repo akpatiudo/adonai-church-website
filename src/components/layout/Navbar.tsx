@@ -19,7 +19,7 @@ return ( <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50"> 
 </div>
     </div>
 
-    <nav className="flex items-center gap-6">
+    <nav className="hidden md:flex items-center gap-6">
   <a href="#hero" className="font-medium hover:text-red-900">
     Home
   </a>
@@ -41,7 +41,7 @@ return ( <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50"> 
   </a>
   <a
   href="#contact"
-  className="bg-red-900 text-white px-5 py-2 rounded-full hover:bg-red-800 transition"
+  className="bg-red-900 text-white px-4 py-2 rounded-full hover:bg-red-800 transition text-sm md:text-base"
 >
   Join Us
 </a>
