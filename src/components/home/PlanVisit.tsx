@@ -1,4 +1,4 @@
-import React from 'react';
+
 function PlanVisit() {
   return (
     <section className="py-24 px-6 bg-gray-100">
