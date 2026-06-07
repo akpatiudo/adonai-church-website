@@ -17,7 +17,7 @@ function Hero() {
           Welcome To
         </p>
 
-        <h1 className="text-sm md:text-2xl font-bold text-gray-900">
+        <h1 className="text-white text-3xl md:text-7xl font-extrabold leading-tight mb-6">
           Adonai Baptist Church
         </h1>
 
