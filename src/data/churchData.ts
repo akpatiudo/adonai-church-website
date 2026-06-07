@@ -8,7 +8,7 @@ const churchData = {
 
   phone: "+234 803 293 7176",
 
-  whatsapp: "234 803 293 7176",
+  whatsapp: "2348032937176",
 
   email: "adonaibaptistchurchohorhe1@gmail.com",
 

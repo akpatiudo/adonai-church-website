@@ -1,5 +1,25 @@
-
+import { useState } from 'react';
 function PlanVisit() {
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [guests, setGuests] = useState('');
+
+  const handlePlanVisit = () => {
+    const message = `Hello Adonai Baptist Church,
+
+New Visitor Registration
+
+Name: ${name}
+
+Phone: ${phone}
+
+Guests: ${guests}`;
+    
+    window.open(
+      `https://wa.me/2348032937176?text=${encodeURIComponent(message)}`,
+      '_blank'
+    );
+  };
   return (
     <section className="py-24 px-6 bg-gray-100">
 
@@ -21,10 +41,12 @@ function PlanVisit() {
             </label>
 
             <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full border rounded-lg p-4"
-            />
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+          className="w-full border rounded-lg p-4"
+/>
           </div>
 
           <div className="mb-6">
@@ -33,9 +55,11 @@ function PlanVisit() {
             </label>
 
             <input
-              type="text"
-              placeholder="Enter your phone number"
-              className="w-full border rounded-lg p-4"
+  type="text"
+  placeholder="Enter your phone number"
+  value={phone}
+  onChange={(e) => setPhone(e.target.value)}
+  className="w-full border rounded-lg p-4"
             />
           </div>
 
@@ -45,14 +69,19 @@ function PlanVisit() {
             </label>
 
             <input
-              type="number"
-              placeholder="How many are coming?"
-              className="w-full border rounded-lg p-4"
+  type="number"
+  placeholder="How many are coming?"
+  value={guests}
+  onChange={(e) => setGuests(e.target.value)}
+  className="w-full border rounded-lg p-4"
             />
           </div>
 
-          <button className="bg-red-900 text-white px-8 py-4 rounded-lg hover:bg-red-800">
-            Plan My Visit
+          <button
+  onClick={handlePlanVisit}
+  className="bg-red-900 text-white px-8 py-4 rounded-lg hover:bg-red-800"
+>
+  Plan My Visit
           </button>
 
         </div>

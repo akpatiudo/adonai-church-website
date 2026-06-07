@@ -233,7 +233,7 @@ ${prayer}`;
       >
         {/* WhatsApp */}
         <a
-          href={`https://wa.me/234${churchData.whatsapp.substring(1)}`}
+          href={`https://wa.me/${churchData.whatsapp}`}
           target="_blank"
           rel="noreferrer"
           style={{
