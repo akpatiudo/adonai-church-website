@@ -73,7 +73,20 @@ const churchData = {
       time: "7:00 AM - 9:00 AM"
     }
   ],
+  latestSermon: {
+  title: "Walking By Faith",
 
+  scripture: "Romans 10:17",
+
+  description:
+    "Faith comes by hearing, and hearing by the Word of God. Join us as we grow deeper through practical biblical teaching.",
+
+  youtube:
+    "https://youtube.com/@JezreelSmithWordImpact",
+
+  livestream:
+    "https://www.facebook.com/share/1BouEabano/"
+},
   coreValues: [
     "Prayer",
     "Holiness",
